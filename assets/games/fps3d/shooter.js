@@ -19,9 +19,9 @@ window.onload = () => {
 
   // Asset paths (place these PNGs alongside index.html)
   const ASSETS = {
-    monster: "C:\New folder\assets\sprites\monster.png",
-    boss: "C:\New folder\assets\sprites\boss_idle.png",
-    gun: "C:\New folder\assets\sprites\ChatGPT Image Dec 8, 2025, 05_17_47 AM.png",         // optional overlay
+    monster: "assets/sprites/monster.png",
+    boss: "assets\sprites\boss_idle.png",
+    gun: "assets\sprites\ChatGPT Image Dec 8, 2025, 05_17_47 AM.png",         // optional overlay
     grenadeIcon: "grenade.png" // optional icon
   };
 
@@ -346,3 +346,4 @@ window.onload = () => {
     setHP: (v) => { hp = v; document.getElementById("hp").innerText = hp; }
   };
 }; // end window.onload
+
