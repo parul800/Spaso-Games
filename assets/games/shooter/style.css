@@ -1,0 +1,74 @@
+body {
+    background: #000;
+    margin: 0;
+    overflow: hidden;
+    font-family: monospace;
+    color: #00ffae;
+}
+
+/* Canvas full-screen */
+#gameCanvas {
+    width: 100vw;
+    height: 100vh;
+    background: #010b0a;
+    display: block;
+}
+
+/* Start & Game Over screens */
+.screen {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    text-align: center;
+}
+
+.screen h1, .screen h2 {
+    color: #00ffae;
+    text-shadow: 0 0 20px #00ffae;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #00ffae;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #00ffae;
+}
+
+/* Health bar */
+.ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+#healthBarOuter {
+    width: 180px;
+    height: 18px;
+    border: 2px solid #00ffae;
+}
+
+#healthBar {
+    height: 100%;
+    width: 100%;
+    background: #00ffae;
+}
+
+#waveInfo {
+    margin-top: 12px;
+    font-size: 20px;
+    text-shadow: 0 0 12px #00ffae;
+}

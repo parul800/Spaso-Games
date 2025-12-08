@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — SPASO</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+<script src="assets/js/matrix.js"></script>
+
+<nav class="navbar">
+  <div class="logo"><img src="assets/img/logo.svg" alt="SPASO" class="logo-img" /></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-wrap">
+  <header class="page-header">
+    <h1 class="glitch" data-text="CONTACT">CONTACT</h1>
+    <p class="tagline">Reach us — collab, feedback, or join the team.</p>
+  </header>
+<div class="content-card holo-card">
+    <form id="contactForm" onsubmit="submitContact(event)">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label>Message</label>
+      <textarea id="message" rows="4" placeholder="Tell us about your idea" required></textarea>
+
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <div id="formMsg" style="margin-top:12px;color:#88ff88;"></div>
+  </div>
+</section>
+
+<footer class="footer">© 2025 SPASO Game Studio</footer>
+
+<script>
+function submitContact(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Simple client-side confirmation — integrate real backend/mail later
+  document.getElementById('formMsg').textContent = `Thanks ${name}. Message queued (local demo).`;
+  document.getElementById('contactForm').reset();
+}
+</script>
+<div id="cursor"></div>
+<script src="assets/js/ui.js"></script>
+
+</body>
+</html>

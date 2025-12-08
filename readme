@@ -1,0 +1,47 @@
+/ (root)
+|– index.html                (from Phase 1)
+|– games.html
+|– about.html
+|– contact.html
+|– assets/
+    |– css/
+    |    |– style.css        (Phase 1 file — append the new CSS below)
+    |
+    |– js/
+    |    |– main.js          (Phase 1 file)
+    |    |– matrix.js        (Phase 1 file)
+    |
+    |– img/
+    |    |– logo.svg
+    |
+    |– games/
+         |– flappy/
+             |– index.html
+             |– flappy.js
+         |– runner/
+             |– index.html
+             |– runner.js
+         |– terminal/
+             |– index.html
+             |– terminal.js
+spaso-fps/
+  index.html
+  style.css
+  main.js
+  raycast.js
+  spritesheet-loader.js
+  enemy.js
+
+  assets/
+    sprites/
+      boss_walk.png        <-- (6 frames horizontally)
+      boss_attack.png      <-- (4 frames)
+      boss_die.png         <-- (4 frames)
+      boss_idle.png        <-- (2 frames)
+      monster_sheet.png    <-- (sprite sheet: idle/walk/attack/die horizontally OR single big one)
+      effects/
+        muzzle_flash.png
+        explosion_1.png
+      hud/
+        medkit.png
+        ammo.png
