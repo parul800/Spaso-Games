@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SPASO | Game Trailers</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+ <style>
+.trailer-box {
+  width: 92%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: rgba(0,0,0,0.4);
+  padding: 18px;
+  border: 1px solid #00ff66;
+  border-radius: 12px;
+}
+video {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #00ff66;
+}
+@media (max-width:600px) {
+  .navbar { padding: 12px; }
+  .nav-links { gap: 14px; }
+}
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">SPASO</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="trailers.html">Trailers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="trailer-box">
+    <h2>Latest Trailer</h2>
+    <video controls src="assets/trailers/game1.mp4"></video>
+  </div>
+<div id="cursor"></div>
+<script src="assets/js/ui.js"></script>
+
+
+</body>
+</html>
