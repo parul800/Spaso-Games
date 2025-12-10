@@ -65,9 +65,18 @@
 <script src="assets/js/boot.js"></script>
 
 <!-- ⭐ BOOT LOADER END ⭐ -->
+<script>
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+</script>
 
 <div id="cursor"></div>
 <script src="assets/js/ui.js"></script>
 
 </body>
 </html>
+
