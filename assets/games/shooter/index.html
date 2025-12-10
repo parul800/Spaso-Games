@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cyberpunk Shooter — SPASO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="ui">
+    <div id="healthBarOuter">
+        <div id="healthBar"></div>
+    </div>
+    <div id="waveInfo">Wave 1</div>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="startScreen" class="screen">
+    <h1>CYBER SHOOTER</h1>
+    <p>WASD to Move — Mouse to Aim — Click to Shoot</p>
+    <button onclick="startGame()">START</button>
+</div>
+
+<!-- FIX APPLIED HERE -->
+<div id="gameOver" class="screen" style="display:none;">
+    <h2>GAME OVER</h2>
+    <p id="finalScore"></p>
+    <button onclick="restartGame()">RESTART</button>
+</div>
+
+<script src="shooter.js"></script>
+</body>
+</html>
