@@ -505,3 +505,18 @@ pre {
     text-shadow: 0 0 12px #00ff66;
     transition: opacity 0.5s ease;
 }
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1, .mega {
+    font-size: 28px !important;
+  }
+
+  .hero-inner {
+    padding-top: 120px !important;
+  }
+}
