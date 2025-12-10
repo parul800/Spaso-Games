@@ -520,3 +520,87 @@ pre {
     padding-top: 120px !important;
   }
 }
+
+/* ---------------------------
+   FIX — MOBILE RESPONSIVE
+--------------------------- */
+
+/* Fix overflow issue */
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* FIX hero and matrix alignment */
+.hero,
+.hero-inner {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* FIX navbar overlapping on right side */
+@media (max-width: 720px) {
+
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    /* Hamburger visible */
+    .menu-btn {
+        display: block !important;
+    }
+
+    /* Nav-links panel slide */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        background: rgba(0,0,0,0.93);
+        backdrop-filter: blur(8px);
+        gap: 20px;
+        transition: right 0.35s ease;
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    /* Hero fix */
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 32px !important;
+        line-height: 40px;
+    }
+
+    .mega {
+        font-size: 40px !important;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    /* Fix matrix background full width */
+    #matrix {
+        width: 100% !important;
+        left: 0 !important;
+    }
+}
