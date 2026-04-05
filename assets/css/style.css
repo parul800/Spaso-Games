@@ -565,3 +565,17 @@ pre {
     z-index: -10;
     opacity: 0.2;
 }
+
+.eva-console {
+    margin-top: 20px;
+}
+
+.eva-output {
+    padding: 20px;
+    border: 1px solid #00ff66;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #00ffcc;
+    font-family: monospace;
+    min-height: 80px;
+}
