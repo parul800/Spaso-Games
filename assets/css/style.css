@@ -517,3 +517,97 @@ pre {
     font-family: monospace;
     min-height: 80px;
 }
+/* =========================
+   SPASO FINAL MOBILE FIX
+   Paste at END of style.css
+========================= */
+@media (max-width: 720px) {
+
+    .navbar {
+        padding: 14px 16px;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 28px;
+        z-index: 10001;
+    }
+
+    .nav-links {
+        list-style: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: rgba(0,0,0,0.96);
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 90px 24px 24px;
+        transition: right 0.35s ease;
+        z-index: 9999;
+        border-left: 1px solid rgba(0,255,100,0.2);
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+    }
+
+    .hero {
+        text-align: center !important;
+        padding: 110px 18px 80px !important;
+    }
+
+    .mega,
+    .hero h1 {
+        font-size: clamp(32px, 9vw, 48px);
+        line-height: 1.2;
+    }
+
+    .tagline {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 14px;
+    }
+
+    .cta-group {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .btn,
+    .btn-holo,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .page-wrap {
+        padding: 20px 14px 80px;
+    }
+
+    #matrix {
+        opacity: 0.15;
+    }
+
+    .terminal {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    pre {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
